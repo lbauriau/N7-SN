@@ -1,0 +1,39 @@
+Nom       : Bauriaud
+Prénom    : Laura
+Groupe TP : I
+
+
+Consigne :  Ci-dessous, répondre à la place des « ... ».
+
+
+=====[ Temps ]==================================================================
+
+Temps passé sur la V1 : 3 heures
+Temps passé sur la V2 : 1 heure
+Pour la V2 on ne tiendra pas compte du temps passé sur la V1.
+Bien sûr, les temps renseignés ici ne sont pas pris en compte dans la notation.
+
+
+=====[ Questions ]==============================================================
+
+Indiquer la relation UML entre Cercle et le Point centre du cercle.
+Le point centre du cercle est une partie de Cercle. 
+Les deux éléments ont une durée de vie liée donc il s'agit d'une relation de composition.
+
+
+
+Comment est réalisée l'exigence E18 ?
+Afin de réaliser l'exigence de E18, il faut :
+- lors de la création du cercle, le centre est un nouveau point
+- pour getCentre() et pour translater(), on doit produire un nouveau point et non pas renvoyer directement le point centre
+- mettre les attributs en privé. Les attributs ne doivent pas être lus ni modifiables.
+Si on vérifie bien ces conditions alors E18 fonctionne.
+
+
+
+=====[ Explications ]===========================================================
+
+(Facultatif) Donner ici les explications supplémentaires utiles à la
+compréhension du travail rendu.
+
+...

@@ -1,0 +1,61 @@
+Nom       : Bauriaud
+Prénom    : Laura
+Groupe TP : I
+
+Les « ... » indiquent les endroits à compléter.
+
+=====[ Temps passé ]============================================================
+
+Ces informations de temps sont demandées à titre indicatif et ne sont pas
+prises en compte dans la notation du projet.
+
+
+* Temps passé sur la V1 : 20 heures
+* Temps passé sur la V2 : ... heures ... minutes
+
+Pour la V2 on ne tiendra pas compte du temps passé sur la V1.
+
+
+=====[ Questions ]==============================================================
+
+--------------------------------------------------------------------------------
+Pourquoi l'exception OperationInterditeException ne peut pas être définie
+comme vérifiée par le compilateur ?
+--------------------------------------------------------------------------------
+
+L'exception OperationInterditeException ne peut pas être définie comme vérifiée par le compilateur car elle n'est levée qu'avec l'utilisation de la Procuration, quand l'arbitre n'est pas confiant.
+
+--------------------------------------------------------------------------------
+Expliquer ce qu'il faut faire pour ajouter un nouveau niveau de jeu, par
+exemple la stratégie lente (C13).  Pour plus de précision, on numérotera
+les étapes à faire.
+--------------------------------------------------------------------------------
+
+Afin d'ajouter un nouveau niveau de jeu, il faut : 
+1. Créer une nouvelle classe qui hérite de stratégie 
+Par exemple : public class StrategieLente implements Strategie
+2. Écrire la classe de la stratégie en fonction des nouvelles fonctionnalités de la stratégie que l'on souhaite
+3. Ajouter la nouvelle stratégie dans le switch case de la fonction defJoueur dans la classe Jouer
+4. Ajouter le mot clé de la stratégie dans le manuel utilisateur.
+
+
+
+--------------------------------------------------------------------------------
+Expliquer ce qui permet, dans votre conception, de changer dynamiquement
+(en cours d'exécution du programme) la stratégie d'un joueur (C14).
+--------------------------------------------------------------------------------
+
+Une mise à jour en cours d'exécution sera prise en compte grâce à la gestion d'exception.
+
+
+=====[ Explications ]===========================================================
+
+--------------------------------------------------------------------------------
+Donner ici les explications supplémentaires utiles à la compréhension du
+travail rendu.
+--------------------------------------------------------------------------------
+
+...
+
+--------------------------------------------------------------------------------
+
