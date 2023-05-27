@@ -1,0 +1,81 @@
+% Compte-rendu minimal du mini-projet SDA : LCA et TH
+% Auteur : Bauriaud Laura
+% Groupe de TP : groupe I
+
+
+**Consigne :** Vous devez écrire vos réponse à la place des ... en laissant
+une ligne vide avant et deux après votre réponse.
+
+**Remarque :** Ce document utilise le langage Markdown. On peut en engendrer
+une version PDF en faisant par exemple :
+
+~~~
+pandoc --toc -N -o LISEZ-MOI.pdf LISEZ-MOI.txt
+~~~
+
+
+# Exercice 1
+
+## Question 1.4
+
+**Indiquer les inconvénients/avantages d'une implantation par listes chaînées
+d'une SDA.**
+
+Les inconvénients : nous sommes obligés de parcourir la liste dans l'ordre pour savoir si une clé appartient à la liste. Complexité linéaire des actions élémentaires telles que l'ajout, la recherche, la suppression...
+Les avantages : la zone mémoire n'a pas besoin d'être contiguë (avantage d'utiliser un pointeur). 
+
+
+# …valuation expérimentale.
+
+## Performance comparée de LCA et TH
+
+Indiquer ici les résultats obtenus.
+
+LCA
+Borne  : 1000 ; Taille : 1000000 ; Min : 892 ; Max : 1094 ; user	0m7.207s
+Borne  : 1000 ; Taille : 100000 ; Min : 72 ; Max : 136 ; user	0m1.402s
+Borne  : 1000 ; Taille : 100000 ; Min : 68 ; Max : 127 ; user	0m1.390s
+Borne  : 1000 ; Taille : 10000 ; Min : 2 ; Max : 20 ;user	0m0.766s
+TH
+Borne  : 1000 ; Taille : 1000000 ; Min : 874 ; Max : 1101 ; user	0m0.075s
+Borne  : 1000 ; Taille : 100000 ; Min : 71 ; Max : 131 ; user	0m0.025s
+Borne  : 1000 ; Taille : 100000 ; Min : 64 ; Max : 137 ; user	0m0.023s
+Borne  : 1000 ; Taille : 10000 ; Min : 2 ; Max : 26 ; user	0m0.016s
+Avec une TH, le temps d'exécution est bien plus rapide qu'avec une LCA. On peut facilement diviser le temps d'exécution par 100.
+
+
+## Qualité du générateur aléatoire
+
+Indiquer les conclusions quant ‡ la qualité du générateur aléatoire.
+
+En comparant la fréquence maximale et minimale pour de grand échantillons, on constate que le générateur aléatoire est de qualité.
+
+
+
+# Principales difficultés rencontrées
+
+Indiquer ici les principales difficultés rencontrées lors de la réalisation de
+ce projet et comment elles ont ÈtÈ surmontées ou contournées.
+
+La principale difficulté a été de savoir comment importer le module LCA dans le programme TH, comment gérer les généricités en instanciant le module. Finalement j'ai repris les TPs précédents pour trouver la solution et l'adapter à mon problème.
+J'ai également rencontré des difficultés à comprendre le fonctionnement de la procédure Pour_Chaque. L'explication de mon professeur de TD/TP m'a aidé à bien cerner son utilisation.
+
+
+# Informations complémentaires
+
+Indiquer ici les informations qui pourraient aider ‡ la compréhension du
+travail réalisé.
+
+Cette partie peut être vide.
+
+...
+
+
+
+# Bilan personnel
+
+Quel bilan personnel tirez vous de ce mini-projet ?
+
+Ce mini-projet a été très utile pour bien cerner les enjeux des fichiers .adb et .ads, la création de nouveaux types privés et les procédures pour pouvoir les utiliser ainsi que les nombreux avantages de la généricité dans les programmes.
+
+

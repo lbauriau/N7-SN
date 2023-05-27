@@ -1,0 +1,59 @@
+NOM : Bauriaud
+Prénom : Laura
+Groupe : I
+Binôme : ø
+
+Indiquer vos réponses aux questions de l'exercice 1 du Bilan 2 ci-après : 
+
+[B1.1] Quelle est la portée de chaque variable déclarée ? Pour chaque variable, on donnera le numéro de ligne où commence et se termine sa portée.
+
+Variable
+- n : début l 8 ; fin l 36
+- p (pointeur)
+- a : début l 13 ; fin l 18
+- n : début l 22 ; fin l 25
+- r : début l 30 ; fin l 33
+
+
+[B1.2] Y a-t-il un exemple de masquage de variable dans ce programme ?
+
+La deuxième déclaration de n, l 22, masque la première.
+
+
+
+[B1.3] Peut-on savoir ce que devrait afficher l’exécution de ce programme ?
+
+Oui, on peut le savoir.
+
+&n = // adresse mémoire de n
+p = // pas encore d'adresse mémoire donc null
+&a = // adresse mémoire de a
+p = // même adresse mémoire que a, ie &a
+*p = 5
+p = // même adresse mémoire que a, ie &a
+*p = 5
+n = 7
+&n = // nouvelle adresse mémoire de n 
+p = // même adresse mémoire que a, ie &a
+p = 5
+n = 10
+r = 11.00 
+&r = // adresse mémoire de r
+p = 5
+
+
+[B1.4] Même s’il compile sans erreur, ce programme est faux. Pourquoi ?
+
+On déclare localement la variable a ente les lignes l13 et l18. Donc après la ligne 18, l'espace mémoire alloué à a est libéré. Or on utilise un pointeur p qui pointe vers l'adresse mémoire de a.
+
+
+[B1.5] La valeur de `p` change-t-elle après l’initialisation de la ligne 14 ?
+
+La valeur de 'p' ne change pas après son initialisation à la ligne 14.
+
+
+[B1.6] Que se passerait-il si on modifiait `*p` après la ligne 19 ?
+
+Il y aurait un problème car techniquement l'adresse mémoire a été libérée après la ligne 18.
+
+

@@ -1,0 +1,28 @@
+Dans ce fichier `reponses1.txt`, 
+
+
+[Question 1.1] Indiquer 
+- comment obtenir le ou les exécutables par compilation séparée.
+Par compilation séparée, il suffit d'écrire en ligne de commande
+c99 -Wextra -pedantic -c nom_fichier.c
+
+
+- les dépendances entre les fichiers qui constituent l’application.
+En utilisant makedepend.
+
+- le rôle de la règle `.PHONY` dans Makefile.
+En utilisant make, on vérifie que le fichier existe. Si on ajoute .PHONY, on considère que les fichiers qui suivent ne sont jamais mis à jour.
+
+
+[Question 1.5] Indiquer
+- Quel est le sous-programme non-visible des autres modules et défini dans le module File.
+
+Le sous programme qui n'est pas visible des autres modules est cellule car le programme est en statique.
+
+- Que se passe-t-il si on enlève le mot-clé static à la compilation ?  
+ 
+ Le programme sera alors visible à partir des autres modules.
+
+- Quel est le risque de ne pas le mettre ?
+
+Le risque est que l'utilisatuer aura la possibilité de modifier directement les cellules et donc de ne pas respecter le format file.
